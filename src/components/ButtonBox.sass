@@ -1,0 +1,25 @@
+@import 'Variables'
+
+.buttonBox 
+  width: 100%
+  height: 63vh
+  max-height: 480px
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-rows: repeat(5, 1fr)
+  grid-gap: 15px 12px
+  border-radius: 10px
+  padding: 25px 
+  box-sizing: border-box
+  &.dark
+    background-color: $t1-toggle-and-keypad-background
+  &.light
+    background-color: $t2-toggle-and-keypad-background
+  &.violet
+    background-color: $t3-toggle-keypad-screen-background
+    
+@media only screen and (min-width: 1024px)
+  .buttonBox
+    grid-gap: 30px 25px 
+    padding: 34px 30px 
+

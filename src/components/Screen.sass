@@ -1,0 +1,28 @@
+@import 'Variables.sass'
+
+.screen 
+  height: 13vh
+  width: 100%
+  margin-bottom: 25px
+  padding: 6px 30px 0
+  border-radius: 10px
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  box-sizing: border-box
+  &.dark
+    background-color: $t1-screen-background
+    div
+      color: $t1-text2
+  &.light
+    background-color: $t2-screen-background
+    div
+      color: $t2-text1
+  &.violet
+    background-color: $t3-toggle-keypad-screen-background
+    div
+      color: $t3-text1
+
+@media only screen and (min-width: 1024px)
+  .screen
+    height: 125px

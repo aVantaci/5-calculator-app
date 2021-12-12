@@ -1,0 +1,80 @@
+@import 'Variables'
+
+button 
+  border: none
+  cursor: pointer
+  border-radius: 10px
+  outline: none
+  transition: .2s
+  font-size: 32px
+  padding-top: 6px  
+  transition: $trans
+  &:active
+    transform: scale(90%)
+  &.dark
+    color: $t1-text1
+    background-color: $t1-key3-background
+    box-shadow: 0px 4px 0px 0px $t1-key3-shadow
+    &:hover 
+      background-color: $t1-key3-shadow
+  &.light
+    color: $t2-text1
+    background-color: $t2-key3-background
+    box-shadow: 0px 4px 0px 0px $t2-key3-shadow
+    &:hover 
+      background-color: $t2-key3-shadow
+  &.violet
+    color: $t3-text1
+    background-color: $t3-key3-background
+    box-shadow: 0px 4px 0px 0px $t3-key3-shadow
+    &:hover 
+      background-color: $t3-key3-shadow
+
+.equals 
+  grid-column: 3/5
+  color: $t1-text2
+  font-size: 20px
+  &.dark
+    color: $t1-text2
+    background-color: $t1-key2-background-and-toggle
+    box-shadow: 0px 4px 0px 0px $t1-key2-shadow
+    &:hover 
+      background-color: $t1-key2-shadow
+  &.light
+    color: $t2-text2
+    background-color: $t2-key2-background-and-toggle
+    box-shadow: 0px 4px 0px 0px $t2-key2-shadow
+    &:hover 
+      background-color: $t1-key2-shadow
+  &.violet
+    color: $t3-text2
+    background-color: $t3-key2-background-and-toggle
+    box-shadow: 0px 4px 0px 0px $t3-key2-shadow
+    &:hover 
+      background-color: $t3-key2-shadow
+
+.delete
+  font-size: 20px
+  text-transform: uppercase
+  &.dark
+    color: $t1-text2
+    background-color: $t1-key1-background
+    box-shadow: 0px 4px 0px 0px $t1-key1-shadow
+    &:hover
+      background-color: $t1-key1-shadow
+  &.light
+    color: $t2-text2
+    background-color: $t2-key1-background
+    box-shadow: 0px 4px 0px 0px $t2-key1-shadow
+    &:hover
+      background-color: $t2-key1-shadow
+  &.violet
+    color: $t3-text3 
+    background-color: $t3-key1-background
+    box-shadow: 0px 4px 0px 0px $t3-key1-shadow
+    &:hover
+      background-color: $t3-key1-shadow
+
+.reset
+  @extend .delete
+  grid-column: 1/3
